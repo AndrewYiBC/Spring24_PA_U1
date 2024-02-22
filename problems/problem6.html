@@ -31,7 +31,7 @@
     let engine = ThreeEngine.new_default_2d();
 
     engine.animation_loop(() => {
-        let twoPi = 2.0 * 3.141592653589793;
+        let twoPi = 2.0 * Math.PI;
         let time = engine.get_time_elapsed();
         let radius = 1.0;
         let center = [radius * Math.cos(twoPi * time), radius * Math.sin(twoPi * time), 0.0];
